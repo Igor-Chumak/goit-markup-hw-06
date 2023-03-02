@@ -7,7 +7,7 @@
     --color-customs: #8E8F99;
     --color-accent: #404BBF;
     --color-social: #fff;
-
+    --color-subscribe: #fff;
 
     /* color-text */
     --color-logo: #4D5AE5;
@@ -15,6 +15,8 @@
     --color-logo-footer: #F4F4FD;
     --color-address: #434455;
     --color-footer: #E7E9FC;
+    --color-social: #fff;
+    --color-subscribe: #fff;
     --color-hero-title: #fff;
     --color-btn-hero: #fff;
     --color-btn-portfolio: #4D5AE5;
@@ -172,7 +174,7 @@ img {
     outline: transparent;
 }
 
-/* Header & Footer */
+/* Header */
 
 header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -260,6 +262,8 @@ header {
     letter-spacing: 0.02em;
 }
 
+/* Footer */
+
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -325,6 +329,20 @@ header {
     --size: 24px;
     width: var(--size);
     height: var(--size);
+}
+
+.footer-subscribe {
+    max-width: 453px;
+    margin-left: auto;
+    color: var(--color-subscribe);
+    outline: 1px dotted burlywood;
+}
+
+.footer-subscribe-title {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+
 }
 
 /* -- Main Page -- */
