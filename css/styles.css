@@ -17,6 +17,7 @@
     --color-footer: #E7E9FC;
     --color-social: #fff;
     --color-subscribe: #fff;
+    --color-subscribe-placeholder: rgba(255, 255, 255, 0.6);
     --color-hero-title: #fff;
     --color-btn-hero: #fff;
     --color-btn-portfolio: #4D5AE5;
@@ -31,6 +32,8 @@
     --bg-color-light: #F4F4FD;
     --bg-color-btn-hero: #4D5AE5;
     --bg-color-btn-hero-hover: #404BBF;
+    --bg-color-btn-footer: #4D5AE5;
+    /* --bg-color-btn-hero-hover: #404BBF; */
     --bg-color-team-icon: #4D5AE5;
     --bg-color-team-icon-hover: #404BBF;
     --bg-color-btn-portfolio: #F4F4FD;
@@ -173,6 +176,26 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     outline: transparent;
 }
+
+.btn-footer {
+    color: var(--color-subscribe);
+    padding: 8px 24px;
+    font-weight: 500;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.04em;
+    background-color: var(--bg-color-btn-footer);
+    border: 0px;
+    border-radius: 4px;
+    /* transition: color var(--transition-property), background-color var(--transition-property), border-color var(--transition-property), box-shadow var(--transition-property); */
+}
+
+/* .btn-footer:is(:hover, :focus) {
+    color: var(--color-btn-portfolio-hover);
+    background-color: var(--bg-color-btn-portfolio-hover);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: transparent;
+} */
 
 /* Header */
 
@@ -331,7 +354,7 @@ header {
     height: var(--size);
 }
 
-.footer-subscribe {
+.footer-form-subscribe {
     max-width: 453px;
     margin-left: auto;
     color: var(--color-subscribe);
@@ -342,7 +365,22 @@ header {
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+}
 
+.footer-input {
+    width: 264px;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    font-size: 12px;
+    line-height: calc(24 / 12);
+    letter-spacing: 0.04em;
+
+    color: var(--color-subscribe-placeholder);
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
 }
 
 /* -- Main Page -- */
