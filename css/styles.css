@@ -736,7 +736,6 @@ header {
     position: absolute;
     top: 24px;
     right: 24px;
-    /* margin-left: auto; */
 
     color: var(--color-modal-icon);
     background-color: var(--bg-color-btn-modal);

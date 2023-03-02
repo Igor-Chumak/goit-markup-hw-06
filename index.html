@@ -397,13 +397,39 @@
       </form>
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hiddens" data-modal>
     <div class="modal">
       <button class="btn-modal-close" data-modal-close type="button">
         <svg class="modal-close-icon">
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
+      <p class="modal-title">Leave your contacts and we will call you back</p>
+
+      <form class="modal-form" name="modal-form">
+
+
+        <label for="">Name
+          <input class="modal-input" type="text" name="user-name" autofocus />
+        </label>
+
+
+        <label for="">Phone
+          <input class="modal-input" type="tel" name="user-phone" />
+        </label>
+
+
+        <label for="">Email
+          <input class="modal-input" type="email" name="user-email" />
+        </label>
+
+
+        <label for="">Comment
+          <textarea class="modal-message" name="user-comment" placeholder="Text input"></textarea>
+        </label>
+
+      </form>
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
