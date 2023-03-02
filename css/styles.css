@@ -338,13 +338,20 @@ header {
     max-width: 453px;
     margin-left: auto;
     color: var(--color-subscribe);
-    outline: 1px dotted burlywood;
+    /* outline: 1px dotted burlywood; */
 }
 
 .footer-subscribe-title {
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+}
+
+.subscribe-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
 }
 
 .footer-input {
@@ -363,7 +370,18 @@ header {
     border-radius: 4px;
 }
 
+.footer-input:focus {
+    color: var(--color-subscribe);
+    border-color: var(--color-subscribe);
+    outline: none;
+}
+
 .btn-footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
     padding: 8px 24px;
 
     font-weight: 500;
@@ -374,16 +392,7 @@ header {
     background-color: var(--bg-color-btn-footer);
     border: 0px;
     border-radius: 4px;
-    /* transition: color var(--transition-property), background-color var(--transition-property), border-color var(--transition-property), box-shadow var(--transition-property); */
 }
-
-/* .btn-footer:is(:hover, :focus) {
-    color: var(--color-btn-portfolio-hover);
-    background-color: var(--bg-color-btn-portfolio-hover);
-    border-color: transparent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    outline: transparent;
-} */
 
 /* -- Main Page -- */
 
