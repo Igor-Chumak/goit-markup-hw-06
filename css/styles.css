@@ -883,7 +883,7 @@ header {
     transition: background-color var(--transition-property), border-color var(--transition-property), fill var(--transition-property);
 }
 
-.modal-input-check:checked+label .modal-icon-check {
+.modal-input-check:checked+.modal-icon-check {
     background-color: var(--bg-color-btn-modal-active);
     border-color: var(--bg-color-btn-modal-active);
     fill: var(--color-modal-check-icon);
