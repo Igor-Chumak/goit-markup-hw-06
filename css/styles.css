@@ -31,6 +31,7 @@
     --color-modal-check: ##757575;
     --color-modal-check-ref: #4D5AE5;
     --color-modal-check-icon: #F4F4FD;
+    --color-btn-modal-submit: #fff;
 
     /* background-color */
     --bg-color: #fff;
@@ -50,6 +51,8 @@
     --bg-color-modal: #FCFCFC;
     --bg-color-btn-modal: #E7E9FC;
     --bg-color-btn-modal-active: #404BBF;
+    --bg-color-btn-modal-submit: #4D5AE5;
+    --bg-color-btn-modal-submit-hover: #404BBF;
 
     /* border-color */
     --brd-color: #E7E9FC;
@@ -348,7 +351,6 @@ header {
     max-width: 453px;
     margin-left: auto;
     color: var(--color-subscribe);
-    /* outline: 1px dotted burlywood; */
 }
 
 .footer-subscribe-title {
@@ -882,4 +884,26 @@ header {
     background-color: var(--bg-color-btn-modal-active);
     border-color: var(--bg-color-btn-modal-active);
     fill: var(--color-modal-check-icon);
+}
+
+.btn-modal-submit {
+    margin-left: 120px;
+    margin-right: auto;
+    padding: 16px 32px;
+
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    color: var(--color-btn-modal-submit);
+    background-color: var(--bg-color-btn-modal-submit);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color var(--transition-property);
+}
+
+.btn-modal-submit:is(:hover, :focus) {
+    background-color: var(--bg-color-btn-modal-submit-hover);
 }
