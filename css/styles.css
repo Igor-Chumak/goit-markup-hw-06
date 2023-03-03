@@ -893,6 +893,7 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    min-width: 169px;
     padding: 16px 32px;
 
     font-weight: 500;
@@ -905,6 +906,7 @@ header {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+    cursor: pointer;
     transition: background-color var(--transition-property);
 }
 
