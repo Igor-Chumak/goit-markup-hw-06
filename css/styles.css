@@ -723,9 +723,9 @@ header {
     top: 50%;
     left: 50%;
     width: 408px;
-    min-height: 576px;
+    min-height: 584px;
     padding: 72px 24px 24px;
-    /* transform: translate(-50%, -50%) scaleY(1) rotate(0); */
+
     transform: translate(-50%, -50%) scaleY(1) skew(0);
 
     background-color: var(--bg-color-modal);
@@ -736,7 +736,6 @@ header {
 }
 
 .backdrop.is-hidden .modal {
-    /* transform: translate(-50%, -50%) scaleY(0) rotate(270deg); */
     transform: translate(-50%, -50%) scaleY(0) skew(-90deg);
 }
 
@@ -778,16 +777,10 @@ header {
 }
 
 .modal-title {
-    /* margin-top: calc(24px + 24px); */
     margin-bottom: 16px;
     font-weight: 500;
     letter-spacing: 0.02em;
     text-align: center;
-}
-
-.modal-field {
-    position: relative;
-    margin-bottom: 8px;
 }
 
 .modal-field-comment {
@@ -795,11 +788,18 @@ header {
 }
 
 .input-text {
+    display: block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
     color: var(--color-modal-input);
+}
+
+.modal-field {
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
 }
 
 .modal-input {
@@ -824,9 +824,9 @@ header {
 
 .modal-icon {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 16px;
-    transform: translateY(50%);
+    transform: translateY(-50%);
 
     fill: var(--color-modal-icon);
 }
