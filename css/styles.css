@@ -841,14 +841,17 @@ header {
     resize: none;
 }
 
-.check-text {
-    /* margin-bottom: 24px; */
+.modal-field-checkbox {
+    margin-bottom: 24px;
+}
+
+.checkbox-text {
     font-size: 12px;
     line-height: calc(16 / 12);
     letter-spacing: 0.04em;
     color: var(--color-modal-check);
 }
 
-.check-text-ref {
+.checkbox-text-ref {
     color: var(--color-modal-check-ref);
 }
