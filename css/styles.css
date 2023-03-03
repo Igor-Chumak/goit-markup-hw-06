@@ -822,6 +822,7 @@ header {
     line-height: calc(16 / 12);
     letter-spacing: 0.04em;
     color: var(--color-modal-check);
+    /* outline: none; */
 }
 
 .check-text-ref {
