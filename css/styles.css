@@ -838,7 +838,6 @@ header {
 .modal-input-focus:focus {
     color: var(--color-modal-input-focus);
     border-color: var(--brd-color-modal-input-focus);
-    fill: var(--bg-color-btn-modal-active);
 }
 
 .modal-icon {
@@ -848,4 +847,8 @@ header {
     transform: translateY(50%);
 
     fill: var(--color-modal-icon);
+}
+
+.modal-input-focus:focus+.modal-icon {
+    fill: var(--bg-color-btn-modal-active);
 }
