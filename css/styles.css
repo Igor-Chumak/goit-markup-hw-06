@@ -30,6 +30,8 @@
     --color-modal-comment: rgba(117, 117, 117, 0.5);
     --color-modal-check: ##757575;
     --color-modal-check-ref: #4D5AE5;
+    --color-modal-check-icon: #F4F4FD;
+
     /* background-color */
     --bg-color: #fff;
     --bg-color-dark: #2E2F42;
@@ -64,7 +66,6 @@
 
     /* transition, animation */
     --transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* --transition-property-modal: 500ms linear; */
 }
 
 /* -- Global -- */
@@ -845,15 +846,10 @@ header {
     margin-bottom: 24px;
 }
 
-.modal-input-check {
-    /* font-size: 14px;
-    color: #555555;
+.checkbox-text {
     display: flex;
     align-items: center;
-    position: relative; */
-}
-
-.checkbox-text {
+    position: relative;
     font-size: 12px;
     line-height: calc(16 / 12);
     letter-spacing: 0.04em;
@@ -861,5 +857,29 @@ header {
 }
 
 .checkbox-text a {
+    margin-left: 0.4em;
     color: var(--color-modal-check-ref);
+}
+
+.modal-icon-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1.25px solid #2e2f42;
+    border-radius: 2px;
+
+    fill: transparent;
+
+    transition: background-color var(--transition-property), border-color var(--transition-property), fill var(--transition-property);
+}
+
+.modal-input-check:checked+label .modal-icon-check {
+    background-color: var(--bg-color-btn-modal-active);
+    border-color: var(--bg-color-btn-modal-active);
+    fill: var(--color-modal-check-icon);
 }
