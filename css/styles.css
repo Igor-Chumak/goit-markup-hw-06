@@ -830,10 +830,12 @@ header {
     background-color: transparent;
     border: 1px solid var(--brd-color-modal-input);
     border-radius: 4px;
+
+    transition: color var(--transition-property), border-color var(--transition-property), fill var(--transition-property);
 }
 
 .modal-input-focus:focus {
-    color: var(color-modal-input-focus);
-    border: 1px solid var(--brd-color-modal-input-focus);
+    color: var(--color-modal-input-focus);
+    border-color: var(--brd-color-modal-input-focus);
     fill: var(--bg-color-btn-modal-active);
 }
