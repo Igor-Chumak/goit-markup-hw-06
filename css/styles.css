@@ -845,6 +845,14 @@ header {
     margin-bottom: 24px;
 }
 
+.modal-input-check {
+    /* font-size: 14px;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    position: relative; */
+}
+
 .checkbox-text {
     font-size: 12px;
     line-height: calc(16 / 12);
@@ -852,6 +860,6 @@ header {
     color: var(--color-modal-check);
 }
 
-.checkbox-text-ref {
+.checkbox-text a {
     color: var(--color-modal-check-ref);
 }
