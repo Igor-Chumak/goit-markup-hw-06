@@ -404,6 +404,11 @@ header {
     background-color: var(--bg-color-btn-footer);
     border: 0px;
     border-radius: 4px;
+    transition: background-color var(--transition-property);
+}
+
+.btn-footer:is(:hover, :focus) {
+    background-color: var(--bg-color-btn-hero-hover);
 }
 
 /* -- Main Page -- */
@@ -888,7 +893,6 @@ header {
 
 .btn-modal-submit {
     display: block;
-    /* margin-left: 120px; */
     margin-left: auto;
     margin-right: auto;
     padding: 16px 32px;
