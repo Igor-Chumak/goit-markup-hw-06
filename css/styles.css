@@ -348,7 +348,7 @@ header {
 }
 
 .footer-form-subscribe {
-    max-width: 453px;
+    width: 453px;
     margin-left: auto;
     color: var(--color-subscribe);
 }
@@ -392,7 +392,6 @@ header {
 
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 16px;
     padding: 8px 24px;
 
@@ -404,6 +403,7 @@ header {
     background-color: var(--bg-color-btn-footer);
     border: 0px;
     border-radius: 4px;
+    cursor: pointer;
     transition: background-color var(--transition-property);
 }
 
