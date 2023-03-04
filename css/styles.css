@@ -794,8 +794,12 @@ header {
 
 .modal-field {
     display: block;
-    position: relative;
     margin-bottom: 8px;
+}
+
+.modal-field-input {
+    display: block;
+    position: relative;
 }
 
 .modal-input {
@@ -831,8 +835,12 @@ header {
     fill: var(--bg-color-btn-modal-active);
 }
 
-.modal-field-comment {
+.modal-field-textarea {
     margin-bottom: 16px;
+    display: block;
+}
+
+.modal-field-comment {
     display: block;
     width: 100%;
     height: 120px;
